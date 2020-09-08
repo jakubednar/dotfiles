@@ -1,0 +1,16 @@
+{
+    "type": "mariadb",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "database": "test",
+    "synchronize": true,
+    "logging": true,
+    "entities": ["build/database/entities/**/*.entity.js"],
+    "migrations": ["src/database/migrations/**/*.{ts,js}"],
+    "cli": {
+        "entitiesDir": "src/database/entities",
+        "migrationDir": "src/database/migrations"
+    }
+}
